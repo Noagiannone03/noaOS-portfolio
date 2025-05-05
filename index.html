@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ios support -->
+      <link rel="apple-touch-icon" href="./icon/manifest/192x192.png" />
+      <meta name="apple-mobile-web-app-status-bar" content="#DCE9E9" />
+      <meta name="theme-color" content="#d1d1d1" />
+        
+    <title>Noa Giannone - Portfolio</title>
+
+<!-- Meta description -->
+  <meta name="description" content="Salut ! Moi c’est Noa Giannone, développeur & designer web passionné : je façonne des outils élégants et minimalistes pour rendre la vie étudiante plus simple. Plongez dans mes projets épurés et efficaces, pensés pour optimiser votre quotidien.">
+
+  <!-- Mots-clés -->
+  <meta name="keywords" content="Noa Giannone, portfolio, outils étudiants, développeur web, designer web, minimaliste, efficacité">
+
+  <!-- Auteur -->
+  <meta name="author" content="Noa Giannone">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.noagiannone.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Noa Giannone – Portfolio & Outils Étudiants">
+  <meta property="og:description" content="Salut ! Moi c’est Noa Giannone, développeur & designer web passionné : je façonne des outils élégants et minimalistes pour rendre la vie étudiante plus simple. Plongez dans mes projets épurés et efficaces.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.noagiannone.com/">
+  <meta property="og:image" content="https://www.noagiannone.com/assets/og-image.png">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@noagiannone">
+  <meta name="twitter:title" content="Noa Giannone – Portfolio & Outils Étudiants">
+  <meta name="twitter:description" content="Salut ! Moi c’est Noa Giannone, développeur & designer web passionné : je façonne des outils élégants et minimalistes pour rendre la vie étudiante plus simple. Plongez dans mes projets épurés et efficaces.">
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./icon/apple_icon.png"
+    />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    />
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Local link -->
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./Css/style.css" />
+
+  </head>
+  
+  <body onload="digi(), calculateBattery()">
+    <div class="navbar">
+      <ul>
+        <li class="leftLi logo">
+          <img src="./icon/apple-white.png" alt="Apple logo" />
+          <ul>
+            <li>
+              <button><a href="https://github.com/mhmdmhd6/Mac-OS-Desktop" target="_blank">About This Mac</a></button>
+            </li>
+            <li>
+              <button>System Preferences...</button>
+            </li>
+            <li>
+              <button>Recent Items</button>
+            </li>
+            <li>
+              <button>Force Quit Finder</button>
+            </li>
+            <li>
+              <button>Sleep</button>
+              <button onClick="window.location.reload();">Restart...</button>
+              <button>Shut Down...</button>
+            </li>
+            <li>
+              <button>Lock Screen</button>
+              <button>Log Out</button>
+            </li>
+          </ul>
+        </li>
+        <li class="leftLi app_name" id="Terminal">
+          <p>Terminal</p>
+        </li>
+        <li class="leftLi app_name" id="Notes">
+          <p>Notes</p>
+        </li>
+        <li class="leftLi app_name" id="calculator">
+          <p>Calculator</p>
+        </li>
+        <li class="leftLi app_name" id="VScode">
+          <p>VScode</p>
+        </li>
+        <li class="leftLi app_name" id="map">
+          <p>Maps</p>
+        </li>
+        <li class="leftLi">
+          File
+          <ul>
+            <li>
+              <button>New File</button>
+              <button>New Window</button>
+            </li>
+            <li>
+              <button>Open File</button>
+              <button>Open Recent File</button>
+            </li>
+            <li>
+              <button>Save</button>
+              <button>Save as</button>
+            </li>
+            <li>
+              <button>Searching</button>
+              <button>Propertie File</button>
+            </li>
+            <li>
+              <button>Customize</button>
+            </li>
+            <li>
+              <button>Exit</button>
+            </li>
+          </ul>
+        </li>
+        <li class="leftLi hidden">Edit</li>
+        <li class="leftLi hidden">View</li>
+        <li class="leftLi hidden">Go</li>
+        <li class="leftLi hidden">Tools</li>
+        <li class="leftLi">Help</li>
+      </ul>
+
+      <ul class="navbar__right">
+        <li class="battery">
+          <span class="battery__text"></span>
+          <div class="battery__container">
+            <div class="battery__progress">
+              <img class="is-charging" src="./icon/charging.png" alt="Battery is charging">
+            </div>
+          </div>
+
+          <div class="battery__popup">
+            <header>
+              <h3>Battery</h3>
+              <span></span>
+            </header>
+            <p>Power Source: <span class="power-source">Battery</span></p>
+            <hr />
+            <button>Battery Preferences...</button>
+          </div>
+        </li>
+        <li class="wifi">
+          <svg width="24" height="24">
+            <path
+              d="M12 6c3.537 0 6.837 1.353 9.293 3.809l1.414-1.414C19.874 5.561 16.071 4 12 4 7.929 4.001 4.126 5.561 1.293 8.395l1.414 1.414C5.163 7.353 8.463 6 12 6zM17.671 14.307c-3.074-3.074-8.268-3.074-11.342 0l1.414 1.414c2.307-2.307 6.207-2.307 8.514 0L17.671 14.307z"
+            ></path>
+            <path
+              d="M20.437,11.293c-4.572-4.574-12.301-4.574-16.873,0l1.414,1.414c3.807-3.807,10.238-3.807,14.045,0L20.437,11.293z"
+            ></path>
+            <circle cx="12" cy="18" r="2"></circle>
+          </svg>
+        </li>
+        <li class="open_Search">
+          <svg width="20" height="20">
+            <path
+              d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"
+            ></path>
+          </svg>
+        </li>
+        <li class="open_control hidden">
+          <img
+            src="./icon/control_center.gif"
+            class="control-center"
+            alt="controlCenter"
+          />
+          <div class="menu__container">
+            <div class="grid__controling">
+              <div class="control_center--grid col-5">
+                <button>
+                  <svg width="24" height="24">
+                    <path
+                      d="M12 6c3.537 0 6.837 1.353 9.293 3.809l1.414-1.414C19.874 5.561 16.071 4 12 4 7.929 4.001 4.126 5.561 1.293 8.395l1.414 1.414C5.163 7.353 8.463 6 12 6zM17.671 14.307c-3.074-3.074-8.268-3.074-11.342 0l1.414 1.414c2.307-2.307 6.207-2.307 8.514 0L17.671 14.307z"
+                    />
+                    <path
+                      d="M20.437,11.293c-4.572-4.574-12.301-4.574-16.873,0l1.414,1.414c3.807-3.807,10.238-3.807,14.045,0L20.437,11.293z"
+                    />
+                    <circle cx="12" cy="18" r="2"></circle>
+                  </svg>
+                  Wi-Fi
+                </button>
+                <button>
+                  <svg height="24px" width="24px" viewBox="0 0 100 100">
+                    <path
+                      d="M62.6 68.501c-1.582 1.637-4.2 1.637-5.782.055-1.636-1.582-1.691-4.146-.109-5.783 1.8-1.8 2.836-4.146 2.836-6.765 0-5.292-4.255-9.547-9.545-9.547s-9.545 4.255-9.545 9.547c0 2.619 1.036 4.965 2.836 6.765 1.582 1.637 1.527 4.255-.109 5.837-1.582 1.528-4.2 1.528-5.782-.109-3.109-3.164-5.127-7.638-5.127-12.493 0-9.82 7.964-17.73 17.727-17.73s17.727 7.91 17.727 17.73c0 4.855-2.018 9.329-5.127 12.493z"
+                    />
+                    <path
+                      d="M50 24.639c17.291 0 31.364 14.021 31.364 31.369 0 8.62-3.491 16.585-9.273 22.149-1.582 1.582-4.2 1.582-5.782-.055-1.582-1.582-1.527-4.201.109-5.783 4.145-4.092 6.764-9.929 6.764-16.312 0-6.437-2.618-12.166-6.818-16.421-4.2-4.201-9.982-6.765-16.364-6.765-6.436 0-12.164 2.564-16.364 6.765-4.255 4.255-6.818 9.984-6.818 16.421 0 6.383 2.618 12.22 6.764 16.312 1.636 1.582 1.691 4.201.109 5.783-1.582 1.637-4.2 1.637-5.782.055-5.782-5.565-9.273-13.53-9.273-22.149 0-17.349 14.073-31.369 31.364-31.369z"
+                    />
+                    <path
+                      d="M86.818 56.008c0-10.202-4.091-19.367-10.8-26.023C69.364 23.275 60.145 19.183 50 19.183c-10.2 0-19.364 4.092-26.018 10.802-6.709 6.656-10.8 15.821-10.8 26.023 0 10.147 4.145 19.367 10.8 26.023 1.582 1.582 1.582 4.146 0 5.783-1.582 1.582-4.2 1.582-5.782 0C10.018 79.739 5 68.392 5 56.008 5 31.131 25.182 11 50 11s45 20.131 45 45.008c0 12.384-5.018 23.731-13.2 31.806-1.636 1.582-4.2 1.582-5.782 0-1.582-1.637-1.582-4.201 0-5.783 6.655-6.656 10.8-15.876 10.8-26.023z"
+                    />
+                  </svg>
+                  AirDrop
+                </button>
+                <button>
+                  <svg height="24" width="24" viewBox="0 0 100 100">
+                    <path
+                      d="M48.7 97.5c-.7 0-1.3-.1-1.9-.4-1.7-.8-2.8-2.5-2.8-4.3V60.7L30.1 73.1c-1.1 1-2.8.9-3.8-.2l-2.8-3.1c-1-1.1-.9-2.8.2-3.8l17.8-16-17.8-16c-1.1-1-1.2-2.7-.2-3.8l2.8-3.1c1-1.1 2.7-1.2 3.8-.2l13.8 12.4v-32c0-1.9 1.1-3.6 2.8-4.3 1.7-.8 3.7-.4 5.1.8l23.7 21.4c1 .9 1.6 2.2 1.6 3.5 0 1.3-.6 2.6-1.6 3.5L55.8 50l19.8 17.8c1 .9 1.6 2.2 1.6 3.5s-.6 2.6-1.6 3.5L51.8 96.3c-.9.8-2 1.2-3.1 1.2zm4.7-36.8v21.4l11.9-10.7-11.9-10.7zm0-42.8v21.4l11.9-10.7-11.9-10.7z"
+                    />
+                  </svg>
+                  Bluetooth
+                </button>
+              </div>
+              <div class="control_center--grid col-7">
+                <button>
+                  <svg
+                    height="24px"
+                    width="24px"
+                    version="1.1"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      d="M6.67,23.6c0,10.75,8.75,19.5,19.5,19.5c5.89,0,11.46-2.69,15.16-7.25c-1.06,0.17-2.12,0.25-3.16,0.25  c-11.3,0-20.5-9.2-20.5-20.5c0-3.81,1.04-7.48,3.03-10.71C12.5,7.3,6.67,14.97,6.67,23.6z"
+                    />
+                  </svg>
+                  Do Not <br />
+                  Disturb
+                </button>
+              </div>
+
+              <div class="control_center--grid col-3--brightness">
+                <button class="nobtn">
+                  <svg height="40px" width="40px" viewBox="0 0 100 100">
+                    <defs>
+                      <g id="a">
+                        <path
+                          d=" M 60 62.8 L 72.8 50 70 47.15 57.15 60 60 62.8 M 38 68 L 38 72 62 72 62 68 38 68 M 27.15 50 L 40 62.8 42.8 60 30 47.15 27.15 50 M 18 72 L 32 72 32 68 18 68 18 72 M 51.95 38.45 L 47.95 38.45 48 56.6 52 56.6 51.95 38.45 M 82 72 L 82 68 68 68 68 72 82 72 Z"
+                        />
+                      </g>
+                    </defs>
+                    <g transform="matrix( 1, 0, 0, 1, 0,-5.2) ">
+                      <use xlink:href="#a" />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <div class="control_center--grid col-3--battery">
+                <button class="nobtn">
+                  <svg
+                    width="40px"
+                    style="
+                      background-color: transparent;
+                      transform: scale(1.3);
+                      transform: translateY(1px);
+                      padding: 0;
+                      margin: 0 5px;
+                    "
+                    viewBox="0 0 84 84"
+                  >
+                    <g transform="matrix(1,0,0,1,1,0)">
+                      <path
+                        d="M69.117,21.917C69.426,21.923 69.733,21.941 70.04,21.976C70.751,22.057 71.451,22.223 72.123,22.469C73.359,22.922 74.491,23.647 75.422,24.578C76.379,25.535 77.119,26.705 77.569,27.982C77.794,28.622 77.947,29.286 78.024,29.96C78.059,30.267 78.077,30.574 78.083,30.883C78.113,35.628 78.113,40.372 78.083,45.117C78.077,45.426 78.059,45.733 78.024,46.04C77.947,46.714 77.794,47.378 77.569,48.018C77.119,49.295 76.379,50.465 75.422,51.422C74.491,52.353 73.359,53.078 72.123,53.531C71.451,53.777 70.751,53.943 70.04,54.024C69.733,54.059 69.426,54.077 69.117,54.083C49.373,54.208 29.627,54.208 9.883,54.083C9.574,54.077 9.267,54.059 8.96,54.024C8.286,53.947 7.622,53.794 6.982,53.569C5.705,53.119 4.535,52.379 3.578,51.422C2.647,50.491 1.922,49.359 1.469,48.123C1.223,47.451 1.057,46.751 0.976,46.04C0.941,45.733 0.923,45.426 0.917,45.117C0.887,40.372 0.887,35.628 0.917,30.883C0.923,30.574 0.941,30.267 0.976,29.96C1.057,29.249 1.223,28.549 1.469,27.877C1.922,26.641 2.647,25.509 3.578,24.578C4.535,23.621 5.705,22.881 6.982,22.431C7.622,22.206 8.286,22.053 8.96,21.976C9.267,21.941 9.574,21.923 9.883,21.917C29.627,21.792 49.373,21.792 69.117,21.917ZM10.007,26.083C9.428,26.087 8.855,26.182 8.311,26.381C7.641,26.627 7.029,27.02 6.524,27.524C6.02,28.029 5.627,28.641 5.381,29.311C5.19,29.833 5.094,30.381 5.084,30.936C5.054,35.666 4.995,40.398 5.085,45.128C5.102,45.661 5.197,46.188 5.381,46.689C5.627,47.359 6.02,47.971 6.524,48.476C7.029,48.98 7.641,49.373 8.311,49.619C8.833,49.81 9.381,49.906 9.936,49.916C29.666,50.041 49.401,50.29 69.128,49.915C69.661,49.898 70.188,49.803 70.689,49.619C71.359,49.373 71.971,48.98 72.476,48.476C72.98,47.971 73.373,47.359 73.619,46.689C73.81,46.167 73.906,45.619 73.916,45.064C73.946,40.334 74.005,35.602 73.915,30.872C73.898,30.339 73.803,29.812 73.619,29.311C73.373,28.641 72.98,28.029 72.476,27.524C71.971,27.02 71.359,26.627 70.689,26.381C70.167,26.19 69.619,26.094 69.064,26.084C49.379,25.959 29.692,26.083 10.007,26.083Z"
+                      />
+                    </g>
+                    <g
+                      transform="matrix(-1.60812e-16,-1,0.833333,-1.3401e-16,33.6667,108)"
+                    >
+                      <path
+                        d="M76,53.5C76,52.672 75.44,52 74.75,52L65.25,52C64.56,52 64,52.672 64,53.5L64,56.5C64,57.328 64.56,58 65.25,58L74.75,58C75.44,58 76,57.328 76,56.5L76,53.5Z"
+                      />
+                    </g>
+                    <path
+                      d="M10.768,27L58,27L58,49L10.768,49C8.689,49 7,47.311 7,45.232L7,30.768C7,28.689 8.688,27 10.768,27Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="control_center--grid col-12--light brightness">
+                <input
+                  type="range"
+                  id="brightness"
+                  min="20"
+                  max="100"
+                  step="1"
+                  value="100"
+                />
+                <img src="./icon/Sun.svg" alt="" width="25">
+              </div>
+              <div class="control_center--grid col-12--volume sound">
+                <input
+                  type="range"
+                  id="sound"
+                  min="0"
+                  max="16"
+                  step="1"
+                  value="8"
+                />
+                <img src="./icon/volume.svg" alt="" width="25">
+              </div>
+              <div class="control_center--grid col-12--music">
+                <div class="musicPlayer">
+                  <div class="musicPlayer--image">
+                    <img src="./icon/dock/music.png" alt="" />
+                    &nbsp;&nbsp;&nbsp;
+                    <h2>Music</h2>
+                  </div>
+                  <div class="musicPlayer--content">
+                    <span class="material-icons-round"> play_arrow </span>
+                    <span class="material-icons-round"> fast_forward </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="clock">
+          <span id="date" class="hidden"></span>
+          <span id="clock"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="contextMenu" class="context-menu" style="opacity: 0; transition: 0.2s;">
+      <ul>
+        <li>
+          <button>New folder</button>
+        </li>
+        <li>
+          <button>Get info</button>
+          <button>Change Desktop Background</button>
+        </li>
+        <li>
+          <button>Sort By</button>
+          <button>Show View Option</button>
+        </li>
+      </ul>
+    </div>
+
+    <!--Dock start-->
+
+    <div class="dock">
+      
+      <!-- Email App Icon -->
+      <button class="icon open-finder">
+        <img src="./icon/dock/finder.png" alt="Finder Logo" />
+        <hr class="point hidden" id="point-finder" />
+      </button>
+      <button accesskey="o" class="icon open-lunchpad">
+        <img
+          class="launching hidden"
+          src="./icon/dock/launchpad.png"
+          alt="Launchpad Logo"
+        />
+        <hr class="point hidden" id="point-launchpad" />
+      </button>
+     
+     <!-- dans le dock, par exemple à la fin -->
+      <button class="icon open-editor">
+        <img src="icon/Launchpad/pages.png" alt="Éditeur"/>
+        <hr class="point hidden" id="point-editor"/>
+      </button>
+      <button class="icon open-vscode">
+        <img src="./icon/dock/vscode.svg" alt="Vscode apps"/>
+        <hr class="point hidden" id="point-vscode" />
+      </button>
+      <button class="icon open-email" data-win="win-email">
+        <img src="./icon/dock/mail.png" alt="Mail Logo" />
+        <hr class="point hidden" id="point-email"/>
+      </button>
+
+      <button class="icon open-safari">
+        <img src="./icon/Launchpad/safari.png" alt="Photos Logo"/>
+      </button>
+      <button class="icon open-map">
+        <img src="./icon/dock/maps.png" alt="maps Logo" class="hidden" />
+        <hr class="point hidden" id="point-maps" />
+      </button>
+      <button class="icon open-cal">
+        <img src="./icon/dock/calculator.png" alt="Calculator Logo"  class="hidden"/>
+        <hr class="point" id="point-cal" />
+      </button>
+      <button class="icon open-note">
+        <img src="./icon/dock/notes.png" alt="Notes Logo" />
+        <hr class="point hidden" id="point-note" />
+      </button>
+      <button accesskey="t" class="icon open-terminal">
+        <img
+          src="./icon/dock/terminal.png"
+          alt="Terminal Logo"
+          class="hidden"
+        />
+        <hr class="point" id="point-terminal" />
+      </button>
+      
+      <button class="icon open-parametres">
+        <img
+          src="./icon/dock/preferences.png"
+          alt="Preferences Logo"
+
+        />
+      </button>
+      <hr class="column hidden" />
+      <button class="icon">
+        <img
+          src="./icon/dock/bin.png"
+          alt="Trash Bin Logo"
+          class="hidden Trash"
+        />
+      </button>
+    </div>
+    <!--DOCK end-->
+
+    <!--LAUNCHPAD start-->
+    <div class="launchpad" id="launchpad">
+      <div class="searchbox">
+        <div class="searchContainer">
+          <svg width="24" height="24">
+            <path
+              d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"
+            ></path>
+          </svg>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search"
+            accesskey="s"
+          />
+        </div>
+      </div>
+      <div class="Apps-container">
+        <div class="child-launchpad" data-keywords="Appstore,Store">
+          <img src="./icon/Launchpad/appstore.png" alt="" />
+          <strong>App store</strong>
+        </div>
+        <div
+          class="child-launchpad open-cal-lunching"
+          data-keywords="Calculator"
+        >
+          <img src="./icon/Launchpad/calculator.png" alt="" />
+          <strong>Calculator</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Calendar">
+          <img src="./icon/Launchpad/calendar.png" alt="" />
+          <strong>Calendar</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Contacts">
+          <img src="./icon/Launchpad/contacts.png" alt="" />
+          <strong>Contacts</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Dictionary">
+          <img src="./icon/Launchpad/dictionary.png" alt="" />
+          <strong>Dictionary</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Home,Files,Finder">
+          <img src="./icon/Launchpad/Home.png" alt="" />
+          <strong>home</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Mail,Email">
+          <img src="./icon/Launchpad/mail.png" alt="" />
+          <strong>Mail</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Messages,Messenger">
+          <img src="./icon/Launchpad/messages.png" alt="" />
+          <strong>Messages</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Netnewswire,News">
+          <img src="./icon/Launchpad/netnewswire.png" alt="" />
+          <strong>Netnewswire</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Numbers,Chart">
+          <img src="./icon/Launchpad/numbers.png" alt="" />
+          <strong>Numbers</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Pages,Note,Notepad">
+          <img src="./icon/Launchpad/pages.png" alt="" />
+          <strong>Pages</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Siri, Assistant">
+          <img src="./icon/Launchpad/siri.png" alt="" />
+          <strong>Siri</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="Podcasts">
+          <img src="./icon/Launchpad/podcasts.png" alt="" />
+          <strong>Podcasts</strong>
+        </div>
+        <div
+          class="child-launchpad"
+          data-keywords="Safari browser,Web browser"
+        >
+          <img src="./icon/Launchpad/safari.png" alt="" />
+          <strong>Safari</strong>
+        </div>
+        <div class="child-launchpad" data-keywords="activity, monitor">
+          <img src="./icon/Launchpad/activitymonitor.png" alt="" />
+          <strong
+            >Monitor <br />
+            activity</strong
+          >
+        </div>
+        <div class="child-launchpad" data-keywords="zoom,video,call">
+          <img src="./icon/Launchpad/zoom.png" alt="" />
+          <strong>Zoom</strong>
+        </div>
+      </div>
+    </div>
+    <!--LAUNCHPAD end-->
+
+    <div class="container__Window">
+      <!-- Terminal -->
+      <div class="window terminal">
+        <div class="window__taskbar">
+          <div class="window__taskbar--actions">
+            <button class="close"></button>
+            <button class="backfull"></button>
+            <button class="full"></button>
+          </div>
+          <div class="window__taskbar--content">
+            <h2>Terminal</h2>
+          </div>
+        </div>
+        <div class="terminal_content">
+          <p>Last Login : Yesterday on console</p>
+
+          <!--    Oh My Zsh bash      -->
+          <div class="terminal_line">
+            <p>
+              <span class="color_green">â</span>&nbsp;&nbsp;
+              <span class="color_blue">~</span>&nbsp;
+              <span contenteditable="true" class="cursor"></span>
+            </p>
+          </div>
+
+          <!--    MacOs Default bash                                 -->
+          <!--          <div class="terminal_line">                            -->
+          <!--            <p>MacBook-Pro:~ root$&nbsp;                         -->
+          <!--              <span contenteditable="true" class="cursor"></span>-->
+          <!--            </p>                                                 -->
+          <!--          </div>                                                 -->
+        </div>
+      </div>
+
+      <!-- Note -->
+      
+<!-- Note -->
+<div class="window note">
+  <div class="window__taskbar">
+    <div class="window__taskbar--actions">
+      <button class="close-note"></button>
+      <button class="backfull-note"></button>
+      <button class="full-note">
+        <svg viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M4.871 3.553L9.37 8.098V3.553H4.871zm3.134 5.769L3.506 4.777v4.545h4.499z"></path><circle cx="6.438" cy="6.438" r="6.438" fill="black"></circle></svg>
+      </button>
+    </div>
+    <div class="window__taskbar--right">
+      <div class="Customize__icon hidden">
+        <span class="material-icons" accesskey="v"> window </span>
+      </div>
+      <div class="Customize__icon">
+        <span class="material-icons adding" accesskey="n"> add_circle </span>
+      </div>
+      <div class="Customize__icon">
+        <span class="material-icons deleting" accesskey="r"> delete </span>
+      </div>
+      <div class="Customize__icon hidden">
+        <span class="material-icons"> ios_share </span>
+      </div>
+      <div class="containerSearch">
+        <svg width="24" height="24">
+          <path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"></path>
+        </svg>
+        <input type="search" name="search" placeholder="search" accesskey="s" />
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content__sidebar">
+      <div class="content__sidebar--notes"></div>
+    </div>
+    <div class="Parent__content--typing">
+      <textarea cols="30" rows="12" class="content__typing">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    MON PARCOURS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    
+    ► EXPÉRIENCES PROFESSIONNELLES
+    
+    2025  DÉVELOPPEUR WEB - ALTERNANCE
+          No ID Lab, Toulon
+         
+          ● Développement d'une plateforme web innovante
+          ● Conception et implémentation de fonctionnalités sur mesure
+          ● Intégration d'interfaces utilisateur dynamiques et réactives
+          ● Collaboration avec l'équipe design pour l'UX/UI
+         
+          ✔ Technologies : HTML5, CSS3, JavaScript avancé, React.js
+          ✔ Compétences : Travail d'équipe, méthodologie Agile, résolution de problèmes
+    
+    2024  TECHNICIEN D'EXPLOITATION - CDD
+          PROFER, Marseille
+         
+          ● Supervision et maintenance des infrastructures informatiques
+          ● Support technique aux utilisateurs
+          ● Participation active à la restructuration du SI
+          ● Documentation des procédures techniques
+         
+          ✔ Compétences acquises : Vision globale des infrastructures, compréhension des besoins métier, gestion des incidents
+    
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    
+    ► FORMATION
+    
+    2024  CYCLE BACHELOR NUMÉRIQUE
+          Institut G4, Marseille
+         
+          Programme de 1ère année :
+          ● Développement web front-end et back-end
+          ● HTML, CSS, bases PHP, SQL
+          ● Systèmes de gestion de contenu (CMS)
+          ● Référencement SEO/SEA
+          ● Design graphique et création multimédia
+          ● Gestion de projet numérique
+    
+    2024  BACCALAURÉAT
+          Lycée Sévigné, Marseille
+         
+          ● Série générale et technologique
+          ● Mention très bien
+         
+          Cette réussite a confirmé mon choix de poursuivre
+          dans le domaine du numérique, alliant créativité 
+          et technicité dans mes projets.
+    
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</textarea>
+    </div>
+  </div>
+</div>
+      <!--note app end-->
+
+      <!-- Vscode app start-->
+      <div class="window Vscode">
+        <div class="window__taskbar">
+          <div class="window__taskbar--actions">
+            <button class="close-Vscode"></button>
+            <button class="backfull-Vscode"></button>
+            <button class="full-Vscode"></button>
+          </div>
+          <div class="window__taskbar--content">
+            <h2 style="color: white;">Vs Code</h2>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="code-editor">
+            <!-- Barre d’onglets -->
+            <div class="editor-tabs">
+              <span class="tab active">skills.js</span>
+              <span class="tab">README.md</span>
+              <span class="tab">config.json</span>
+            </div>
+            <!-- Zone de code -->
+            <pre class="code-block"><code>
+          <span class="token comment">// COMPÉTENCES DE DÉVELOPPEMENT</span>
+          
+          <span class="token comment">// --- FRONT-END & WEB ---</span>
+          <span class="token keyword">const</span> <span class="token variable">webSkills</span> = {
+            <span class="token property">htmlCss</span>:    <span class="token string">"Maîtrise de HTML5 &amp; CSS3 pour des interfaces responsives"</span>,
+            <span class="token property">phpMysql</span>:   <span class="token string">"Sites dynamiques en PHP et gestion de bases MySQL"</span>,
+            <span class="token property">javascript</span>: <span class="token string">"Interactions et SPA en Vanilla JS et frameworks modernes"</span>
+          };
+          
+          <span class="token comment">// --- MOBILE & APPLICATIONS ---</span>
+          <span class="token keyword">const</span> <span class="token variable">appSkills</span> = {
+            <span class="token property">android</span>:     <span class="token string">"Android Studio pour apps natives"</span>,
+            <span class="token property">ios</span>:         <span class="token string">"Xcode pour développement iOS"</span>,
+            <span class="token property">reactNative</span>: <span class="token string">"React Native (Expo) pour cross-platform"</span>,
+            <span class="token property">firebase</span>:    <span class="token string">"Firebase – base en temps réel &amp; auth"</span>
+          };
+          
+          <span class="token comment">// --- BACK-END & API ---</span>
+          <span class="token keyword">const</span> <span class="token variable">backSkills</span> = {
+            <span class="token property">python</span>:   <span class="token string">"Python – scripts et micro-services"</span>,
+            <span class="token property">flask</span>:    <span class="token string">"Flask – APIs RESTful légères"</span>,
+            <span class="token property">gunicorn</span>: <span class="token string">"Gunicorn – déploiement en production"</span>
+          };
+          
+          <span class="token comment">// Qualités : rigueur, autonomie, travail d’équipe, curiosité</span>
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vscode app end -->
+      
+
+
+      <!-- 7. EMAIL – CONTACT -->
+<!-- 7. EMAIL – CONTACT -->
+<div id="win-email" class="window email">
+  <div class="window__taskbar window-header">
+    <div class="window__taskbar--actions">
+      <button class="close-email"></button>
+      <button class="backfull-email"></button>
+      <button class="full-email"></button>
+    </div>
+    <div class="window__taskbar--content">
+      <h2>Contactez-moi</h2>
+    </div>
+  </div>
+  <div class="window-content">
+    <!-- Toolbar avec bouton d'envoi -->
+    <div class="email-toolbar">
+      <div class="email-toolbar-group">
+        <button type="submit" form="contact-form" class="email-send-button">
+          <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+          Envoyer
+        </button>
+      </div>
+      <div class="email-toolbar-divider"></div>
+      <div class="email-toolbar-group">
+        <button class="email-toolbar-button" title="Pièce jointe">
+          <svg viewBox="0 0 24 24"><path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z"></path></svg>
+        </button>
+        <button class="email-toolbar-button" title="Image">
+          <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"></path></svg>
+        </button>
+      </div>
+      <div class="email-toolbar-divider"></div>
+      <div class="email-toolbar-group">
+        <button class="email-toolbar-button" title="Gras">B</button>
+        <button class="email-toolbar-button" title="Italique">I</button>
+        <button class="email-toolbar-button" title="Souligné">U</button>
+      </div>
+    </div>
+    
+    <!-- Email composition area -->
+    <div class="email-composition">
+      <form id="contact-form" action="https://formspree.io/f/mdkgknrz" method="POST">
+        <!-- Email header -->
+        <div class="email-header">
+          <div class="email-header-row">
+            <div class="email-header-label">À :</div>
+            <input type="text" class="email-header-input" value="noa.giannone@noagiannone.fr" disabled>
+          </div>
+          <div class="email-header-row">
+            <div class="email-header-label">De :</div>
+            <input type="email" name="email" class="email-header-input" placeholder="Votre adresse email" required>
+          </div>
+        </div>
+        
+        <!-- Message area -->
+        <div class="email-message">
+          <textarea name="message" placeholder="Écrivez votre message ici..." required></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div id="win-safari" class="window safari">
+  <div class="window__taskbar window-header">
+    <div class="window__taskbar--actions">
+      <button class="close-safari"></button>
+      <button class="backfull-safari"></button>
+      <button class="full-safari"></button>
+    </div>
+    <div class="window__taskbar--content">
+      <h2>Safari</h2>
+    </div>
+  </div>
+  <div class="window-content">
+    <!-- Barre de navigation du navigateur -->
+    <div class="safari-navbar">
+      <div class="safari-navbar-controls">
+        <button class="safari-btn safari-back">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        </button>
+        <button class="safari-btn safari-forward">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </button>
+        <button class="safari-btn safari-reload">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+            <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+          </svg>
+        </button>
+        <button class="safari-btn safari-home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="safari-address-bar">
+        <div class="safari-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zM6.96 12.186c-.102.153-.25.27-.438.353a1.49 1.49 0 0 1-.565.123c-.327 0-.583-.08-.769-.24a.86.86 0 0 1-.277-.7c0-.013 0-.032.003-.058l.001-.042 1.06-4.931a2 2 0 0 1 .166-.501c.09-.175.214-.318.37-.429.16-.11.35-.185.566-.222.215-.037.44-.055.673-.055.268 0 .487.06.656.179.17.118.255.292.255.521 0 .075-.01.159-.032.252l-1.068 4.989a2.845 2.845 0 0 1-.17.51zm.2-8.67c-.214.214-.5.321-.857.321-.357 0-.645-.107-.857-.32a1.07 1.07 0 0 1-.32-.79c0-.295.107-.544.32-.757.214-.214.5-.32.857-.32.357 0 .643.106.857.32.214.213.32.462.32.746 0 .295-.106.546-.32.76z"/>
+          </svg>
+        </div>
+        <input type="text" class="safari-url" value="https://monsite.com/portfolio" readonly>
+      </div>
+      <div class="safari-actions">
+        <button class="safari-btn safari-plus">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg>
+        </button>
+        <button class="safari-btn safari-bookmarks">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+          </svg>
+        </button>
+        <button class="safari-btn safari-settings">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Contenu de la page web -->
+    <div class="safari-content">
+      <div class="safari-homepage">
+        <div class="safari-hero">
+          <h1>Bienvenue dans mon univers</h1>
+          <div class="safari-hero-tagline">Dev le jour, voyageur toujours</div>
+        </div>
+        
+        <div class="safari-section">
+          <div class="safari-section-header">
+            <div class="safari-section-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+              </svg>
+            </div>
+            <h2>Ma passion pour l'informatique</h2>
+          </div>
+          <div class="safari-section-content">
+            <p>Tout a commencé quand j'avais 10 ans, lorsqu'on m'a offert mon premier PC. J'étais fasciné par cette machine et j'ai tout de suite voulu comprendre comment elle fonctionnait. Ce qui me captivait le plus, c'était ce défi constant entre moi et l'ordinateur, cette envie de découvrir ses secrets. ð»</p>
+            <p>C'est grâce à mon cousin qui vit en Espagne que je me suis vraiment plongé dans le développement. Quand j'ai vu qu'il avait créé son propre blog à partir de simples lignes de code, ça a été comme une révélation! J'ai toujours aimé construire, créer et partager avec les autres - des cabanes en carton enfant aux sites web aujourd'hui. Le code est devenu ma façon de donner vie à mon imagination et étancher cette soif de creation</p>
+          </div>
+        </div>
+        
+        <div class="safari-section">
+          <div class="safari-section-header">
+            <div class="safari-section-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+            </div>
+            <h2>Sport et évasion</h2>
+          </div>
+          <div class="safari-section-content">
+            <p>L'escalade est devenue une vraie passion pour moi. Ce que j'aime dans ce sport, c'est qu'il me pousse à me dépasser tout en me vidant complètement la tête. Chaque prise est un nouveau défi à surmonter! ð§‍âï¸</p>
+            <p>J'adore aussi courir en pleine nature, surtout en colline. Ce n'est pas pour la performance, mais pour la sensation de liberté et la beauté des paysages. Ces moments me permettent de me déconnecter de la routine quotidienne et de me reconnecter à l'essentiel. Rien de tel qu'un sentier en pleine nature pour faire le vide et revenir aux sources.</p>
+            <div class="safari-images">
+              <div class="safari-image">
+                <img src="images/escalade-falaise.jpg" alt="Escalade" />
+                <div class="safari-image-caption">En pleine session d'escalade</div>
+              </div>
+              <div class="safari-image">
+                <img src="images/trail-running.jpg" alt="Course en montagne" />
+                <div class="safari-image-caption">Mon échappatoire en pleine nature</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="safari-section">
+          <div class="safari-section-header">
+            <div class="safari-section-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
+                <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
+              </svg>
+            </div>
+            <h2>Voyages et découvertes</h2>
+          </div>
+          <div class="safari-section-content">
+            <p>Cette passion pour les voyages, je la dois à mes parents. Tout a commencé par des petites escapades familiales en Crète et en Espagne. Mais c'est vraiment mon premier grand voyage aux États-Unis et au Canada, pour rendre visite à ma famille de globe-trotteurs, qui a été le déclic. C'est là que j'ai attrapé ce virus incurable du voyage! ð</p>
+            <p>Depuis, je collectionne les expériences et les rencontres. Ce que j'aime par-dessus tout, c'est l'immersion dans de nouvelles cultures et les conversations avec les locaux qui me font voir le monde autrement. Chaque voyage est une nouvelle page de vie qui s'écrit. ð£ï¸</p>
+            <p>Aujourd'hui, cette passion se partage à deux. Avec ma moitié, nous avons déjà exploré l'Autriche et l'Italie ensemble, et notre liste de futures destinations ne cesse de s'allonger! Voyager à deux, c'est doubler les souvenirs et partager ces moments où le temps semble s'arrêter devant un coucher de soleil ou une vue à couper le souffle. â¤ï¸ ð§³</p>
+            <div class="safari-images safari-world-map">
+              <div class="safari-image">
+                <img src="images/Image JPEG.jpeg" alt="Carte du monde avec destinations" />
+                <div class="safari-image-caption">Les pays que j'ai eu la chance d'explorer</div>
+              </div>
+            </div>
+            <div class="safari-images">
+              <div class="safari-image">
+                <img src="images/newyork.jpg" alt="New York" />
+                <div class="safari-image-caption">Mon premier choc culturel à New York</div>
+              </div>
+              <div class="safari-image">
+                <img src="images/vienne.jpg" alt="Venise" />
+                <div class="safari-image-caption">Vienne, notre premier voyage en couple</div>
+              </div>
+              <div class="safari-image">
+                <img src="images/dubrovnik.jpg" alt="Dubrovnik" />
+                <div class="safari-image-caption">Dubrovnik, coup de cœur inattendu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Structure de base de l'onglet -->
+<div class="window parametres" id="win-parametres">
+  <div class="window__taskbar">
+    <div class="window__taskbar--actions">
+      <button class="close close-parametres"></button>
+      <button class="backfull backfull-parametres"></button>
+      <button class="full full-parametres"></button>
+    </div>
+    <div class="window__taskbar--content" style="color: white;">
+      <h2 style="color: #fff;">Paramètres</h2>
+    </div>
+  </div>
+  <div class="parametres_content">
+    <div class="parametres-container">
+      <!-- Structure à deux colonnes: sidebar + contenu principal -->
+      <div class="parametres-body">
+        <!-- Sidebar avec icônes -->
+        <div class="parametres-sidebar">
+          <ul>
+            <li class="active">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </span>
+              <span>Astuces</span>
+            </li>
+            <li>
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </span>
+              <span>Général</span>
+            </li>
+            <li>
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                  <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                  <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                </svg>
+              </span>
+              <span>Apparence</span>
+            </li>
+            <li>
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </span>
+              <span>Confidentialité</span>
+            </li>
+            <li>
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+              </span>
+              <span>Notifications</span>
+            </li>
+            <li>
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                  <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                </svg>
+              </span>
+              <span>Son</span>
+            </li>
+            <li>
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+              </span>
+              <span>À propos</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Contenu principal (avec scroll corrigé) -->
+        <div class="parametres-main">
+          <!-- En-tête avec icône et titre -->
+          <div class="parametres-header">
+            <div class="header-icon">
+              <img src="./images/profile-noa.jpeg" style="border-radius: 180px;" alt="Portfolio Icon" />
+            </div>
+            <div class="header-text">
+              <h1>Bienvenue sur mon portfolio</h1>
+              <p class="subtitle">Plongez dans mon univers digital interactif</p>
+            </div>
+          </div>
+
+          <!-- Section concept -->
+          <div class="parametres-section">
+            <h2>Quel est le concept ?</h2>
+            <div class="concept-content">
+              <p>Ce portfolio est conçu comme une interface interactive inspirée des systèmes d'exploitation modernes. Vous pouvez naviguer entre différentes applications comme sur un véritable ordinateur, chacune représentant un aspect de mon profil professionnel.</p>
+              <p>Explorez librement les différentes sections en cliquant sur les icônes du dock en bas de l'écran. Vous y découvrirez mon parcours, mes compétences, mes projets et bien plus encore, le tout dans une expérience immersive et ludique.</p>
+            </div>
+          </div>
+
+          <!-- Section onglets à découvrir -->
+          <div class="parametres-section">
+            <h2>Les onglets à découvrir</h2>
+
+            <!-- Notes -->
+            <div class="app-section">
+              <div class="app-icon">
+                <img src="./icon/dock/notes.png" alt="Notes Icon" />
+              </div>
+              <div class="app-description">
+                <h3>Notes</h3>
+                <p>Consultez mon parcours professionnel et académique. Découvrez les étapes clés de ma formation et de mon évolution dans le monde du développement web.</p>
+              </div>
+            </div>
+
+            <!-- VS Code -->
+            <div class="app-section reverse">
+              <div class="app-description">
+                <h3>VS Code</h3>
+                <p>Explorez mes compétences techniques en développement, du front-end au back-end. Découvrez les langages, frameworks et outils que je maîtrise pour créer des solutions web innovantes.</p>
+              </div>
+              <div class="app-icon">
+                <img src="./icon/dock/vscode.svg" alt="VS Code Icon" />
+              </div>
+            </div>
+
+            <!-- Safari -->
+            <div class="app-section">
+              <div class="app-icon">
+                <img src="./icon/Launchpad/safari.png" alt="Safari Icon" />
+              </div>
+              <div class="app-description">
+                <h3>Safari</h3>
+                <p>Faites connaissance avec ma personnalité, mes passions et mes centres d'intérêt. Découvrez ce qui m'anime au quotidien et ce qui façonne ma vision du développement web.</p>
+              </div>
+            </div>
+
+            <!-- Finder -->
+            <div class="app-section reverse">
+              <div class="app-description">
+                <h3>Finder</h3>
+                <p>Parcourez mes projets personnels et professionnels. Chaque dossier contient un projet sur lequel j'ai travaillé, avec des détails sur les technologies utilisées et les défis relevés.</p>
+              </div>
+              <div class="app-icon">
+                <img src="./icon/dock/finder.png" alt="Finder Icon" />
+              </div>
+            </div>
+
+            <!-- Mail -->
+            <div class="app-section" style="margin-bottom: 20vh;">
+              <div class="app-icon">
+                <img src="./icon/dock/mail.png" alt="Mail Icon" />
+              </div>
+              <div class="app-description">
+                <h3>Mail</h3>
+                <p>Envie d'en savoir plus ou de discuter d'un projet ? N'hésitez pas à me contacter via cette application. Je serai ravi d'échanger avec vous et de répondre à vos questions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--debut code finder-->
+
+
+
+
+<div class="window finder">
+  <div class="window__taskbar">
+    <div class="window__taskbar--actions">
+      <button class="close-finder"></button>
+      <button class="backfull-finder"></button>
+      <button class="full-finder"></button>
+    </div>
+    <div class="window__taskbar--content">
+      <h2>Finder</h2>
+    </div>
+  </div>
+  <div class="content">
+    <div class="finder-container">
+      <div class="finder-body">
+        <!-- Sidebar -->
+        <nav class="finder-sidebar">
+          <ul>
+            <li class="active">Mes projets</li>
+            <li>Téléchargements</li>
+            <li>Documents</li>
+            <li>Bureau</li>
+          </ul>
+        </nav>
+    
+        <!-- Main area -->
+        <div class="finder-main">
+          <!-- Barre d'outils -->
+          <div class="finder-toolbar">
+            <div class="breadcrumb">Finder > Mes projets</div>
+            <div class="finder-actions">
+              <img src="https://img.icons8.com/ios-glyphs/20/000000/search--v1.png" alt="Rechercher" class="icon-search"/>
+              <img src="https://img.icons8.com/material-outlined/20/000000/filter.png" alt="Filtrer" class="icon-filter"/>
+            </div>
+          </div>
+          
+          <!-- Grille de fichiers -->
+          <div class="file-grid">
+            <div class="file-card" data-title="Whisp.docx" data-content="
+              <div class='editor-document whisp-doc'>
+                <div class='editor-header'>
+                  <img src='https://img.icons8.com/color/48/000000/chat--v1.png' class='editor-logo'/>
+                  <h3>Whisp - Chat de proximité pour étudiants</h3>
+                </div>
+                <div class='editor-section'>
+                  <h4>La genèse du projet</h4>
+                  <p>J'ai créé Whisp pour répondre à un problème que j'ai personnellement vécu dans mon parcours d'étudiant : la difficulté de créer des liens sociaux authentiques sur un grand campus universitaire. L'anonymat et l'isolement sont des réalités que trop d'étudiants vivent aujourd'hui, alors même qu'ils sont entourés de milliers de pairs.</p>
+                  <div class='feature-box'>
+                    <div class='feature'>
+                      <img src='https://img.icons8.com/ios/50/000000/map-marker.png' class='feature-icon'/>
+                      <span>Géolocalisation précise</span>
+                    </div>
+                    <div class='feature'>
+                      <img src='https://img.icons8.com/ios/50/000000/communication.png' class='feature-icon'/>
+                      <span>Discussions instantanées</span>
+                    </div>
+                    <div class='feature'>
+                      <img src='https://img.icons8.com/ios/50/000000/security-shield-green.png' class='feature-icon'/>
+                      <span>Sécurité renforcée</span>
+                    </div>
+                  </div>
+                </div>
+                <div class='editor-section'>
+                  <h4>Vision et valeurs</h4>
+                  <p>Mon objectif était de briser cette barrière invisible en utilisant la technologie pour faciliter les connexions humaines réelles. Whisp permet aux étudiants de discuter en temps réel avec d'autres personnes physiquement proches d'eux - que ce soit à la bibliothèque, à la cafétéria ou dans les espaces communs.</p>
+                  <div class='whisp-mockup'>
+                    <img src='https://img.icons8.com/ios/100/000000/iphone.png' class='mockup-img'/>
+                    <div class='mockup-content'>
+                      <div class='chat-bubble'>Salut ! Tu es aussi en cours d'éco ?</div>
+                      <div class='chat-bubble'>Oui, je galère un peu avec les concepts...</div>
+                      <div class='chat-bubble'>On pourrait réviser ensemble ?</div>
+                    </div>
+                  </div>
+                  <p>Ce qui me tient particulièrement à cœur dans ce projet, c'est sa capacité à transformer des moments ordinaires en opportunités de rencontres significatives. Un simple échange sur un cours difficile peut déboucher sur une amitié durable ou un groupe d'étude productif.</p>
+                </div>
+                <div class='editor-section'>
+                  <h4>Impact attendu</h4>
+                  <p>La valeur fondamentale de Whisp est l'authenticité des interactions. Dans un monde saturé de réseaux sociaux où les relations sont souvent superficielles, j'ai voulu créer un outil qui favorise les échanges réels et spontanés, ancrés dans un contexte partagé.</p>
+                </div>
+              </div>
+            ">
+              <img src="https://img.icons8.com/color/48/000000/chat--v1.png" alt="Chat">
+              <span>Whisp.docx</span>
+            </div>
+            
+            <div class="file-card" data-title="ViteMonGrandOral.docx" data-content="
+              <div class='editor-document grand-oral-doc'>
+                <div class='editor-header'>
+                  <img src='https://img.icons8.com/color/48/000000/idea.png' class='editor-logo'/>
+                  <h3>ViteMonGrandOral - Générateur de sujets et problématiques</h3>
+                </div>
+                <div class='editor-section'>
+                  <h4>Origine du projet</h4>
+                  <p>La création de ViteMonGrandOral est née directement de ma propre frustration lors de la préparation du Grand Oral au lycée. Je me souviens encore de ces longues heures passées à essayer de formuler une problématique pertinente, alors que j'avais seulement quelques idées de thématiques vagues.</p>
+                  <div class='scenario-box'>
+                    <div class='scenario-icon'>â</div>
+                    <div class='scenario-text'>
+                      <h5>Le problème</h5>
+                      <p>Les lycéens ont souvent des idées générales mais peinent à formuler des problématiques précises et stimulantes pour leur Grand Oral.</p>
+                    </div>
+                  </div>
+                  <div class='scenario-box solution'>
+                    <div class='scenario-icon'>ð¡</div>
+                    <div class='scenario-text'>
+                      <h5>La solution</h5>
+                      <p>Un outil IA qui transforme des mots-clés en sujets structurés avec problématique, introduction et pistes de réflexion.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class='editor-section'>
+                  <h4>Fonctionnement</h4>
+                  <p>Ce moment critique dans le parcours lycéen m'a fait prendre conscience d'un besoin non satisfait : un outil capable de transformer des idées embryonnaires en sujets structurés et problématiques stimulantes. J'ai alors décidé d'exploiter le potentiel de l'intelligence artificielle pour démocratiser l'accès à cette compétence qui n'est pas innée chez tous les élèves.</p>
+                  <div class='process-flow'>
+                    <div class='process-step'>
+                      <div class='process-number'>1</div>
+                      <div class='process-desc'>Saisie des mots-clés</div>
+                    </div>
+                    <div class='process-arrow'>→</div>
+                    <div class='process-step'>
+                      <div class='process-number'>2</div>
+                      <div class='process-desc'>Analyse IA</div>
+                    </div>
+                    <div class='process-arrow'>→</div>
+                    <div class='process-step'>
+                      <div class='process-number'>3</div>
+                      <div class='process-desc'>Génération de problématiques</div>
+                    </div>
+                  </div>
+                </div>
+                <div class='editor-section'>
+                  <h4>Valeurs et impact social</h4>
+                  <p>Ce qui m'a particulièrement motivé, c'est de pouvoir réduire l'anxiété liée à cette épreuve en donnant aux lycéens un point de départ solide. ViteMonGrandOral n'est pas qu'un simple générateur - c'est un outil d'accompagnement qui permet aux élèves de gagner en confiance et d'approfondir leur réflexion.</p>
+                  <p>Je suis convaincu que l'accès à l'éducation passe aussi par des outils qui nivellent les inégalités dans la préparation aux examens. Ce projet incarne cette valeur d'équité qui me tient à cœur, en offrant à chacun la possibilité de développer un sujet de qualité, indépendamment de son aisance initiale avec l'exercice.</p>
+                </div>
+              </div>
+            ">
+              <img src="https://img.icons8.com/color/48/000000/idea.png" alt="Étude">
+              <span>ViteMonGrandOral.docx</span>
+            </div>
+            
+            <div class="file-card" data-title="Vago.docx" data-content="
+              <div class='editor-document vago-doc'>
+                <div class='editor-header'>
+                  <img src='https://img.icons8.com/color/48/000000/money-bag.png' class='editor-logo'/>
+                  <h3>Vago - Microtâches pour financer ton plein d'essence</h3>
+                </div>
+                <div class='editor-section'>
+                  <div class='vago-banner'>
+                    <div class='banner-text'>Gagne ton plein d'essence en quelques clics</div>
+                    <img src='https://img.icons8.com/color/96/000000/gas-station.png' class='banner-icon'/>
+                  </div>
+                  <h4>Le concept</h4>
+                  <p>L'idée de Vago est née d'une préoccupation très concrète que j'ai rencontrée comme étudiant : comment financer mes déplacements quotidiens en voiture pour me rendre en cours. Le coût de l'essence représente une charge financière significative qui peut compromettre la poursuite des études pour certains.</p>
+                </div>
+                <div class='editor-section'>
+                  <h4>En chiffres</h4>
+                  <div class='stats-container'>
+                    <div class='stat-box'>
+                      <div class='stat-value'>40-60€</div>
+                      <div class='stat-label'>Coût mensuel moyen du carburant pour un étudiant</div>
+                    </div>
+                    <div class='stat-box'>
+                      <div class='stat-value'>15-20h</div>
+                      <div class='stat-label'>Temps de travail nécessaire au SMIC pour le financer</div>
+                    </div>
+                    <div class='stat-box'>
+                      <div class='stat-value'>5-8h</div>
+                      <div class='stat-label'>Temps de microtâches sur Vago pour le même montant</div>
+                    </div>
+                  </div>
+                </div>
+                <div class='editor-section'>
+                  <h4>Motivation et vision</h4>
+                  <p>En observant l'essor des applications de microtâches rémunérées, j'ai eu cette intuition : pourquoi ne pas créer une plateforme spécifiquement conçue pour aider les étudiants à gagner l'équivalent d'un plein d'essence par mois, de manière flexible et adaptée à leur emploi du temps chargé ?</p>
+                  <div class='task-examples'>
+                    <div class='task-card'>
+                      <img src='https://img.icons8.com/color/48/000000/survey.png' class='task-icon'/>
+                      <div class='task-details'>
+                        <div class='task-name'>Sondages rapides</div>
+                        <div class='task-reward'>0,50€ - 2€</div>
+                      </div>
+                    </div>
+                    <div class='task-card'>
+                      <img src='https://img.icons8.com/color/48/000000/test-partial-passed.png' class='task-icon'/>
+                      <div class='task-details'>
+                        <div class='task-name'>Tests d'applications</div>
+                        <div class='task-reward'>3€ - 8€</div>
+                      </div>
+                    </div>
+                    <div class='task-card'>
+                      <img src='https://img.icons8.com/color/48/000000/audio-file.png' class='task-icon'/>
+                      <div class='task-details'>
+                        <div class='task-name'>Transcriptions audio</div>
+                        <div class='task-reward'>5€ - 15€</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='editor-section'>
+                  <h4>Impact social</h4>
+                  <p>Ce qui me motive profondément dans ce projet, c'est sa dimension d'impact social immédiat. Chaque euro gagné sur Vago représente un obstacle de moins dans le parcours éducatif d'un étudiant. La mobilité est un facteur d'émancipation et d'égalité des chances que je souhaite préserver.</p>
+                  <p>Au-delà de l'aspect financier, Vago incarne ma conviction que les étudiants devraient pouvoir se concentrer sur leurs études sans anxiété économique. La plateforme est conçue pour s'intégrer naturellement dans leur quotidien, en proposant des tâches qui peuvent être réalisées entre deux cours ou pendant les temps morts.</p>
+                </div>
+              </div>
+            ">
+              <img src="https://img.icons8.com/color/48/000000/money-bag.png" alt="Finance">
+              <span>Vago.docx</span>
+            </div>
+            
+            <div class="file-card" data-title="Portfolio.docx" data-content="
+              <div class='editor-document portfolio-doc'>
+                <div class='editor-header'>
+                  <img src='https://img.icons8.com/color/48/000000/briefcase.png' class='editor-logo'/>
+                  <h3>Mon Portfolio</h3>
+                </div>
+                <div class='portfolio-banner'>
+                  <div class='portfolio-title'>Innovations & Solutions</div>
+                  <div class='portfolio-subtitle'>Mes projets au service des étudiants</div>
+                </div>
+                <div class='editor-section'>
+                  <h4>Vision d'ensemble</h4>
+                  <p>Ce portfolio regroupe l'ensemble de mes projets innovants qui reflètent ma passion pour résoudre des problèmes concrets à travers des solutions technologiques accessibles. Chaque projet est né d'une expérience personnelle et vise à améliorer le quotidien des étudiants.</p>
+                </div>
+                <div class='portfolio-grid'>
+                  <div class='portfolio-item'>
+                    <img src='https://img.icons8.com/color/48/000000/chat--v1.png' class='portfolio-icon'/>
+                    <div class='portfolio-item-title'>Whisp</div>
+                    <div class='portfolio-item-desc'>Chat de proximité entre étudiants</div>
+                  </div>
+                  <div class='portfolio-item'>
+                    <img src='https://img.icons8.com/color/48/000000/idea.png' class='portfolio-icon'/>
+                    <div class='portfolio-item-title'>ViteMonGrandOral</div>
+                    <div class='portfolio-item-desc'>Générateur de sujets et problématiques</div>
+                  </div>
+                  <div class='portfolio-item'>
+                    <img src='https://img.icons8.com/color/48/000000/money-bag.png' class='portfolio-icon'/>
+                    <div class='portfolio-item-title'>Vago</div>
+                    <div class='portfolio-item-desc'>Microtâches pour financer tes déplacements</div>
+                  </div>
+                </div>
+                <div class='editor-section'>
+                  <h4>Compétences développées</h4>
+                  <div class='skills-container'>
+                    <div class='skill-tag'>Conception UX/UI</div>
+                    <div class='skill-tag'>Développement mobile</div>
+                    <div class='skill-tag'>Intelligence artificielle</div>
+                    <div class='skill-tag'>Entrepreneuriat</div>
+                    <div class='skill-tag'>Gestion de projet</div>
+                    <div class='skill-tag'>Analyse de données</div>
+                  </div>
+                </div>
+                <div class='editor-section'>
+                  <h4>Mon approche</h4>
+                  <p>À travers ces réalisations, j'ai développé une approche centrée sur l'utilisateur et une vision entrepreneuriale orientée vers l'impact social positif. Mon objectif est de continuer à créer des outils qui font une différence tangible dans la vie des utilisateurs.</p>
+                </div>
+              </div>
+            ">
+              <img src="https://img.icons8.com/color/48/000000/briefcase.png" alt="Portfolio">
+              <span>Portfolio.docx</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Editor Window -->
+<div id="win-editor" class="window editor">
+  <div class="window__taskbar">
+    <div class="window__taskbar--actions">
+      <button class="close-editor"></button>
+      <button class="backfull-editor"></button>
+      <button class="full-editor"></button>
+    </div>
+    <div class="window__taskbar--content">
+      <h2 id="editor-title">Éditeur de texte</h2>
+    </div>
+  </div>
+  <div class="editor-content">
+    <!-- Barre de menu -->
+ 
+
+    <div class="editor-menu">
+      <button title="Nouveau">📄</button>
+      <button title="Ouvrir">📂</button>
+      <button title="Sauvegarder">💾</button>
+      <div class="editor-separator"></div>
+      <button title="Gras"><strong>B</strong></button>
+      <button title="Italique"><em>I</em></button>
+      <button title="Souligné"><u>U</u></button>
+      <div class="editor-separator"></div>
+      <button title="Police">Aa</button>
+      <button title="Taille">🔠</button>
+      <div class="editor-separator"></div>
+      <button title="Gauche">⬅️</button>
+      <button title="Centré">↔️</button>
+      <button title="Droite">➡️</button>
+    </div>
+    <!-- Zone editable -->
+    <div class="editor-area" contenteditable="true">
+      <!-- Contenu injecté par JS -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+      <div class="window maps">
+        <div class="window__taskbar">
+          <div class="window__taskbar--actions">
+            <button class="close-map"></button>
+            <button class="backfull-map"></button>
+            <button class="full-map"></button>
+          </div>
+          <div class="window__taskbar--content">
+            <h2>Maps</h2>
+          </div>
+        </div>
+        <div class="content">
+          <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://maps.google.com/maps?q=2880%20Broadway,%20Amol&t=&z=13&ie=UTF8&iwloc=&output=embed">
+          </iframe>
+        </div>
+      </div>
+      <!-- calculator -->
+      <div class="calculator">
+        <div class="calculator__top">
+          <div class="calculator__top--taskabr">
+            <button class="close-cal"></button>
+            <button class="max-cal" disabled></button>
+            <button class="min-cal" disabled></button>
+          </div>
+          <input
+            class="calculator__top--output display"
+            type="text"
+            value="0"
+          />
+        </div>
+        <div class="input">
+          <button value="C" class="button operator-2">C</button>
+          <button value="+/-" class="button operator-2">+/-</button>
+          <button value="%" class="button operator-2">%</button>
+          <button value="/" class="button operator">÷</button>
+          <button value="7" class="button number">7</button>
+          <button value="8" class="button number">8</button>
+          <button value="9" class="button number">9</button>
+          <button value="*" class="button operator">×</button>
+          <button value="4" class="button number">4</button>
+          <button value="5" class="button number">5</button>
+          <button value="6" class="button number">6</button>
+          <button value="-" class="button operator">−</button>
+          <button value="1" class="button number">1</button>
+          <button value="2" class="button number">2</button>
+          <button value="3" class="button number">3</button>
+          <button value="+" class="button operator">+</button>
+          <button value="0" class="button number large">0</button>
+          <button value="." class="button number">.</button>
+          <button value="=" class="button operator r-radius">=</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Widgets panel -->
+    <section class="widgets-panel">
+      <div class="widgets-panel__calendar">
+        <div id="taghvim">
+          <h2>19</h2>
+          <h4>Tuesday</h4>
+        </div>
+        <ul>
+          <li class="blue">
+            <span>Listen podcast</span>
+            <span>2:30 - 3:00 PM</span>
+          </li>
+          <li class="purple">
+            <span>English class</span>
+            <span>4:00 - 4:45 PM</span>
+          </li>
+          <li class="green">
+            <span>Stand-up meeting</span>
+            <span>6:15 - 5:30 PM</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Widgets panel -->
+  </div>
+    <div class="spotlight_serach">
+      <svg width="24" height="24">
+        <path
+          d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"
+        />
+      </svg>
+      <input type="search" placeholder="Spotlight Search" />
+    </div>
+
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/app.js"></script>
+    
+    <script>// 1) Récupère les conteneurs
+      const finderBody = document.querySelector('.finder-body');
+      const fileEditor = document.querySelector('.file-editor');
+      const editorFilename = fileEditor.querySelector('.editor-filename');
+      const editorArea     = fileEditor.querySelector('.editor-area');
+      const editorBackBtn  = fileEditor.querySelector('.editor-back');
+      
+      // 2) Gère le clic sur chaque fichier
+      document.querySelectorAll('.file-card').forEach(card => {
+        card.addEventListener('click', () => {
+          // titre et contenu à injecter
+          const title   = card.dataset.title || card.querySelector('span').textContent;
+          const content = card.dataset.content || `<p>Contenu du fichier <strong>${title}</strong></p>`;
+      
+          // remplace l'affichage
+          finderBody.style.display = 'none';
+          fileEditor.style.display = 'flex';
+      
+          // injecte titre + texte
+          editorFilename.textContent = title;
+          editorArea.innerHTML = content;
+        });
+      });
+      
+      // 3) Bouton « ← Retour »
+      editorBackBtn.addEventListener('click', () => {
+        fileEditor.style.display = 'none';
+        finderBody.style.display = 'flex';
+      });
+      </script>
+  </body>
+</html>
