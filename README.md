@@ -1,115 +1,95 @@
-## Hello World 👋
-I am planing to make a mac OS simulator using HTML, CSS, and JavaScript 😀
+# NoaOS Portfolio
 
-<h1>
-  Mac Os Monterey
-</h1>
+**Bonjour et bienvenue sur NoaOS Portfolio !**  
+Plongez dans une simulation interactive de macOS, développée en HTML, CSS et JavaScript, pour découvrir mes compétences, mes projets et mon parcours de manière ludique et immersive.
 
-Try it now! :
-https://mhmdmhd6.github.io/Mac-OS-Desktop
+---
 
-<p align="center">
-  Sample Desktop Application 👇
-</p>
+## 🚀 Fonctionnalités
 
-![Screenshot 2022-06-04 155457](https://user-images.githubusercontent.com/79286306/171997338-103ee406-550d-4707-b7e9-c4627d1cb756.jpg)
+- **Navigation fluide** : Ouvrez, fermez et déplacez les fenêtres comme sur macOS.  
+- **Launchpad** : Lancez vos applications favorites.  
+- **Terminal** : Interface de ligne de commande factice pour une touche de réalisme.  
+- **Notes** : Application de prise de notes simple et fonctionnelle.  
+- **Calculatrice** : Application de calcul basique.  
+- **Maps** : Intégration d'une carte interactive.  
+- **VSCode** : Aperçu de mon environnement de développement.  
+- **Centre de contrôle** : Réglage du volume, de la luminosité et du WiFi.  
+- **Themes** : Passage automatique entre thème clair et sombre.  
+- **Raccourcis clavier** : Accès rapide aux apps (Alt + T, Alt + O, Alt + S).  
 
+## 🗂️ Applications
 
-<p align="center">
-  Sample Mobile Application 👇
-</p>
-                                           
-<p align="center">
-  <img width="300" src="https://user-images.githubusercontent.com/79286306/170665240-c8feef83-d6b0-41de-9368-ac15c7f4f0af.jpg">
-</p>
+Voici à quoi sert chaque application dans l'interface NoaOS :
+- **Safari** : explorer mes passions et mes hobbies.
+- **Notes** : consulter mon parcours professionnel et scolaire.
+- **Finder & Pages** : découvrir mes projets, comment je les ai menés à bien et leur vocation.
+- **Mail** : me contacter facilement.
+- **Préférences** : guide interactif pour apprendre à utiliser l'interface.
+- **VSCode** : présenter mes compétences en développement web.
 
-                                      
+---
 
-<hr> <br>
+## 🛠️ Stack technique
 
-## New Available features in this recent versions are: 😀
+- **HTML5**  
+- **CSS3** (Flexbox, Grid, animations)  
+- **JavaScript (ES6+)**  
+- **GSAP** pour les animations scroll et transitions  
+- **Git & GitHub Pages** pour le déploiement  
 
-- [x] New background image.
-- [x] Bluring the navbar (Bottom and Top).
-- [x] New icons are added to the bottom taskbar.
-- [x] Menu is added to top taskbar.
-- [x] Dots under the icons of open apps.
-- [x] Apps name is in top navbar.
-- [x] Add light theme to project.
-- [x] Right click Menubar.
-- [x] control center for control brightness, sound, WiFi and others.
+---
 
-## Sample images for the changes are as follow:👇
+## 🎯 Compétences mises en avant
 
-<hr> <br>
+- Conception d'interfaces responsives  
+- Gestion d'états et interactions utilisateur en JavaScript  
+- Animations et transitions avancées (GSAP)  
+- Intégration de médias et ressources externes (Maps, images, icônes)  
+- Structuration et organisation de projet front-end  
 
-In this version I have added new icons, launchpad, Notepad and calculator. 😃
-An example of new icons those are added:
-> This is how the new features looks like :)
+---
 
-|new feature in this version| Launchpad |
-|------------|------------|
-| ![new feature](https://user-images.githubusercontent.com/79286306/171997418-85fea996-05ed-46e5-9338-d26ea4a3d2c7.jpg)| ![launchpad](https://user-images.githubusercontent.com/79286306/171997441-fad28051-24a5-4331-bbdc-b5c13c5dc663.jpg) |
+## 📝 Installation locale
 
+1. Clonez le dépôt :  
+   ```bash
+   git clone https://github.com/Noagiannone03/noaOS-portfolio.git
+   ```  
+2. Ouvrez `index.html` dans votre navigateur ou servez le dossier avec un serveur local.  
+3. Naviguez dans l'interface et amusez-vous !
 
+---
 
-| Terminal | Calculator App  |
-|------------|-----------------|
-| <img src="https://user-images.githubusercontent.com/79286306/171997288-79440098-cd50-40aa-9903-9df0da8acfd1.jpg" width="100%"> | <img src="https://user-images.githubusercontent.com/79286306/171997312-167ee32a-e8bb-4787-863a-ff0f2135bbf0.jpg" width="100%"> |  
+## 📂 Structure du projet
 
+```
+Mac-OS-Desktop/
+├── index.html
+├── css/
+├── javascript/
+├── icon/
+├── background/
+└── README.md
+```
 
-  and also Note app
+---
 
+## 🤝 Contribuer
 
-![note](https://user-images.githubusercontent.com/79286306/136186848-1a675a71-4cb6-4ab2-9445-bb53c9746641.jpg)
+Les contributions sont les bienvenues !  
+- Forkez ce dépôt  
+- Créez une branche (`git checkout -b feature/ma-nouvelle-fonction`)  
+- Commitez vos changements (`git commit -m 'Ajout d'une nouvelle fonctionnalité'`)  
+- Poussez vers la branche (`git push origin feature/ma-nouvelle-fonction`)  
+- Ouvrez une Pull Request  
 
+---
 
+## 📄 Licence
 
-<hr>
+Ce projet est sous licence [MIT](https://opensource.org/licenses/MIT).
 
-📌 Please feel free to contribute to this project with your commits, and share this with your friends if you like this projects.😁 😃
+---
 
-### List of components for this project:
-> - [x] Navbar top
-> - [x] Dock
-> - [x] Clock **(AM , PM)**
-> - [x] Date
-> - [x] App Window
-> - [x] Drop down menu on navbar top
-> - [x] Terminal app
-> - [x] Note app
-> - [x] notification page
-> - [x] Add more notes on note app
-> - [x] Calculator app 
-> - [x] Control center
-> - [ ] Preference app     
-> - [x] Map app      
-> - [ ] Siri  
-> - [x] VSCode app      
-> - [ ] Weather app      
-> - [ ] Calendar app      
-> - [x] Launchpad      
-> - [x] search in Launchpad      
-> - [x] Launchpad icons vibrate    
-> - [ ] Launchpad change page 
-> - [x] Launchpad animation      
-> - [ ] dragable icon on dock      
-> - [ ] right click to duck icons
-> - [x] right click to desktop
-> - [x] shortcuts for opening app and other parts of site    
-> - [x] Spotlight search
-> - [ ] Change dekstop background
-> - [x] Spotlight search
-> - [x] Add change brightness range input 
-
-
-## list of Shorcuts : <br>
-> Alt + t = opening Terminal  <br>
-> Alt + o = opening Launchpad <br>
-> Alt + s = opening serach in  launchpad <br>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
-> Thanks @neysidev (Mehdi Neysi), @m-kashani (Mahdi Kashani) , @pooria faramarzian and @safaeean (Hossein Piri) for helping me to improve this project 🙏❤
+*Merci de votre visite et bonne exploration !*
